@@ -1,0 +1,176 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:#A8D3E8;
+
+    font-family:'Gaegu', cursive;
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
+}
+
+.back{
+
+    position:fixed;
+
+    top:35px;
+    left:40px;
+
+    text-decoration:none;
+
+    color:#111;
+
+    font-family:'Unkempt';
+
+    font-size:26px;
+
+    z-index:100;
+
+}
+
+.book{
+
+    position:relative;
+
+    width:1100px;
+    height:700px;
+
+    background:white;
+
+    border:4px solid #111;
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    box-shadow:12px 12px rgba(0,0,0,.12);
+
+    display:flex;
+
+}
+
+/* lipatan tengah */
+
+.book::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+    top:0;
+
+    transform:translateX(-50%);
+
+    width:8px;
+    height:100%;
+
+    background:
+    linear-gradient(
+        to right,
+        rgba(0,0,0,.25),
+        rgba(0,0,0,.05),
+        rgba(255,255,255,.45)
+    );
+
+}
+
+.page{
+
+    width:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px;
+
+}
+
+.page img{
+
+    max-width:90%;
+
+    max-height:90%;
+
+    object-fit:contain;
+
+}
+
+.cover-title{
+
+    font-family:'Rubik Scribble';
+
+    font-size:70px;
+
+    text-align:center;
+
+    line-height:1.1;
+
+}
+
+/* tombol */
+
+.arrow{
+
+    position:absolute;
+
+    bottom:25px;
+
+    width:55px;
+    height:55px;
+
+    border:none;
+
+    background:none;
+
+    font-size:42px;
+
+    cursor:pointer;
+
+    opacity:0;
+
+    transition:.25s;
+
+    color:#111;
+
+}
+
+.book:hover .arrow{
+
+    opacity:1;
+
+}
+
+.left{
+
+    left:25px;
+
+}
+
+.right{
+
+    right:25px;
+
+}
+
+.arrow:hover{
+
+    transform:scale(1.2);
+
+}

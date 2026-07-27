@@ -1,0 +1,93 @@
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+body{
+
+    font-family:'Gaegu', cursive;
+
+    background:#DFA87E;
+
+    min-height:100vh;
+
+}
+
+/* ========================= */
+
+.back{
+
+    position:fixed;
+
+    top:35px;
+
+    left:40px;
+
+    text-decoration:none;
+
+    color:#111;
+
+    font-family:'Unkempt', cursive;
+
+    font-size:28px;
+
+    transition:.2s;
+
+}
+
+.back:hover{
+
+    letter-spacing:1px;
+
+}
+
+/* ========================= */
+
+.paper{
+
+    width:780px;
+
+    min-height:820px;
+
+    margin:80px auto;
+
+    background:white;
+
+    border:3px solid #111;
+
+    border-radius:12px;
+
+    box-shadow:10px 10px 0 rgba(0,0,0,.12);
+
+    padding:70px;
+
+}
+
+/* ========================= */
+
+.paper h1{
+
+    font-family:'Rubik Scribble', cursive;
+
+    font-size:68px;
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+/* ========================= */
+
+.paper p{
+
+    font-size:32px;
+
+    line-height:1.8;
+
+    margin-bottom:30px;
+
+}
