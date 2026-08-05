@@ -1,0 +1,231 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:#F2EEE6;
+
+    font-family:'Unkempt',cursive;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-height:100vh;
+
+}
+
+/* ====================== */
+
+.back{
+
+    position:absolute;
+
+    top:35px;
+    left:45px;
+
+    color:#111;
+
+    text-decoration:none;
+
+    font-size:28px;
+
+}
+
+/* ====================== */
+
+.paper{
+
+    width:900px;
+
+    min-height:650px;
+
+    background:white;
+
+    border:3px solid #111;
+
+    border-radius:18px;
+
+    padding:55px;
+
+    box-shadow:12px 12px rgba(0,0,0,.08);
+
+}
+
+/* ====================== */
+
+h1{
+
+    text-align:center;
+
+    font-family:'Rubik Scribble';
+
+    font-size:58px;
+
+    margin-bottom:10px;
+
+}
+
+.subtitle{
+
+    text-align:center;
+
+    font-size:28px;
+
+    margin-bottom:60px;
+
+}
+
+/* ====================== */
+
+.folder-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:45px;
+
+}
+
+/* ====================== */
+
+.mini-folder{
+
+    position:relative;
+
+    height:185px;
+
+    border:3px solid #111;
+
+    border-radius:12px;
+
+    text-decoration:none;
+
+    color:#111;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transition:.3s;
+
+    box-shadow:8px 8px rgba(0,0,0,.08);
+
+}
+
+.food{
+    background:#F7B6C8;
+}
+
+.music{
+    background:#A4C8A8;
+}
+
+.films{
+    background:#C7B6E7;
+}
+
+.places{
+    background:#A8D3E8;
+}
+
+.mini-folder:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:12px 12px rgba(0,0,0,.12);
+
+}
+
+/* ====================== */
+
+.tab{
+
+    position:absolute;
+
+    top:-22px;
+
+    left:28px;
+
+    width:120px;
+
+    height:22px;
+
+    border:3px solid #111;
+
+    border-bottom:none;
+
+    border-radius:8px 8px 0 0;
+
+}
+
+.food .tab{
+
+    background:#F7B6C8;
+
+}
+
+.music .tab{
+
+    background:#A4C8A8;
+
+}
+
+.films .tab{
+
+    background:#C7B6E7;
+
+}
+
+.places .tab{
+
+    background:#A8D3E8;
+
+}
+
+
+.file{
+
+    position:absolute;
+
+    top:-18px;
+
+    left:48px;
+
+    font-family:'Gaegu';
+
+    font-size:18px;
+
+    letter-spacing:2px;
+
+    font-weight:bold;
+
+}
+
+/* ====================== */
+
+.icon{
+
+    font-size:54px;
+
+    margin-bottom:12px;
+
+}
+
+h2{
+
+    font-family:'Gaegu';
+
+    font-size:34px;
+
+    letter-spacing:2px;
+
+}

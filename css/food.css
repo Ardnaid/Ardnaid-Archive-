@@ -1,0 +1,361 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:#F7B6C8;
+
+    font-family:'Gaegu', cursive;
+
+    color:#111;
+
+    padding:40px;
+
+}
+
+/* ===========================
+        RETURN
+=========================== */
+
+.back{
+
+    text-decoration:none;
+
+    color:#111;
+
+    font-family:'Unkempt';
+
+    font-size:28px;
+
+}
+
+/* ===========================
+            TITLE
+=========================== */
+
+h1{
+
+    text-align:center;
+
+    font-family:'Rubik Scribble';
+
+    font-size:72px;
+
+    margin:30px 0 40px;
+
+}
+
+/* ===========================
+            FILTER
+=========================== */
+
+.filter{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    margin-bottom:50px;
+
+}
+
+.filter button{
+
+    background:white;
+
+    border:2px solid #111;
+
+    border-radius:30px;
+
+    padding:8px 22px;
+
+    font-family:'Unkempt';
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.filter button:hover,
+.filter .active{
+
+    background:#111;
+
+    color:white;
+
+}
+
+/* ===========================
+        RECEIPT GRID
+=========================== */
+
+.receipt-grid{
+
+    max-width:1600px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:25px;
+
+    align-items:start;
+
+}
+
+/* ===========================
+          RECEIPT
+=========================== */
+
+.receipt{
+
+    background:#fffef9;
+
+    padding:22px;
+
+    border:2px solid #222;
+
+    box-shadow:8px 8px rgba(0,0,0,.12);
+
+    transition:.25s;
+
+    position:relative;
+
+}
+
+.receipt:hover{
+
+    transform:translateY(-8px) rotate(-1deg);
+
+}
+
+/* sobekan atas */
+
+.receipt::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-8px;
+
+    left:0;
+
+    width:100%;
+
+    height:8px;
+
+    background:
+    repeating-linear-gradient(
+        -45deg,
+        transparent 0 8px,
+        #fffef9 8px 16px
+    );
+
+}
+
+/* sobekan bawah */
+
+.receipt::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-8px;
+
+    left:0;
+
+    width:100%;
+
+    height:8px;
+
+    background:
+    repeating-linear-gradient(
+        45deg,
+        transparent 0 8px,
+        #fffef9 8px 16px
+    );
+
+}
+
+/* ===========================
+      DASHED LINE
+=========================== */
+
+.receipt hr{
+
+    border:none;
+
+    border-top:2px dashed #777;
+
+    margin:15px 0;
+
+}
+
+/* ===========================
+        CONTENT
+=========================== */
+
+.number{
+
+    text-align:center;
+
+    letter-spacing:2px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+}
+
+.receipt h2{
+
+    text-align:center;
+
+    font-family:'Unkempt';
+
+    font-size:27px;
+
+    margin-bottom:8px;
+
+}
+
+.place{
+
+    text-align:center;
+
+    font-size:22px;
+
+}
+
+.score{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin:12px 0;
+
+    font-size:22px;
+
+}
+
+.overall{
+
+    font-weight:bold;
+
+}
+
+.note{
+
+    font-size:19px;
+
+    line-height:1.4;
+
+    font-style:italic;
+
+}
+
+
+
+/* ===========================
+        NAVIGATION
+=========================== */
+
+.navigation{
+
+    margin-top:70px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    font-family:'Unkempt';
+
+    font-size:30px;
+
+}
+
+.navigation a{
+
+    text-decoration:none;
+
+    color:#111;
+
+}
+
+/* ===========================
+        RESPONSIVE
+=========================== */
+
+@media(max-width:1200px){
+
+.receipt-grid{
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+}
+
+@media(max-width:850px){
+
+.receipt-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:600px){
+
+.receipt-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+h1{
+
+    font-size:52px;
+
+}
+
+.receipt-grid{
+    width:95%;
+}
+
+.filter{
+
+    flex-wrap:wrap;
+
+}
+
+}
+
+.receipt:nth-child(odd){
+    transform:rotate(-1.5deg);
+}
+
+.receipt:nth-child(even){
+    transform:rotate(1deg);
+}
+
+.receipt:hover{
+    transform:translateY(-10px) scale(1.03) rotate(0deg);
+    z-index:10;
+}

@@ -124,6 +124,18 @@ body{
 
 }
 
+.cover-text{
+
+    font-family:'gaegu';
+
+    font-size:25px;
+
+    text-align:center;
+
+    line-height:1.19;
+
+}
+
 /* tombol */
 
 .arrow{

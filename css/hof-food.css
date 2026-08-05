@@ -1,0 +1,165 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:#F7B6C8;   /* ganti sesuai kategori */
+
+    font-family:'Gaegu';
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-height:100vh;
+
+    padding:60px 0;
+
+}
+
+h1 {
+
+    font-family:'Rubik Scribble', cursive;
+
+    font-size:80px;
+
+    margin-bottom:30px;
+
+    color:#111;
+    text-align:center;
+
+}
+
+
+
+/* ===========================
+        RETURN
+=========================== */
+
+.back{
+
+    position:absolute;
+
+    top:35px;
+    left:45px;
+
+    text-decoration:none;
+
+    color:#111;
+
+    font-size:28px;
+
+}
+
+
+
+
+
+.notes{
+
+    margin-top:40px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:28px;
+
+    align-items:start;
+
+}
+
+.note{
+
+    background:#FFFDF7;
+
+    border:2px solid #222;
+
+    border-radius:14px;
+
+    padding:22px;
+
+    box-shadow:6px 6px 0 rgba(0,0,0,.08);
+
+}
+
+.note h2{
+
+    font-family:'Gaegu',cursive;
+
+    font-size:30px;
+
+    margin-bottom:16px;
+
+}
+
+.note ol{
+
+    padding-left:22px;
+
+    font-size:20px;
+
+    line-height:2;
+
+}
+
+.note li{
+
+    font-family:'Gaegu',cursive;
+
+}
+
+.champion{
+
+    grid-column:span 3;
+
+    text-align:center;
+
+    transform:none;
+
+    background:#FFF6D8;
+
+}
+
+.winner{
+
+    margin-top:20px;
+
+}
+
+.medal{
+
+    font-size:70px;
+
+}
+
+.winner h3{
+
+    font-family:'Gaegu',cursive;
+
+    font-size:38px;
+
+    margin:12px 0 6px;
+
+}
+
+.winner p{
+
+    font-size:22px;
+
+}
+
+.winner span{
+
+    display:block;
+
+    margin-top:12px;
+
+    font-size:24px;
+
+    font-weight:bold;
+
+}
